@@ -1,0 +1,92 @@
+<!DOCTYPE html>	
+<html>
+<head>
+<title>Assignment-3</title>
+</head>
+<body>
+      <style>
+	p {
+position: absolute;
+right:550px;
+bottom: 300px; 
+transform: translate(-50%, -50%);
+}
+
+</style>
+      <title>Program3</title>
+     <header>
+          <nav>
+          <a href="#">HOME</a> |
+          <a href="#">PLACES</a> |
+          <a href="#">GALLERY</a> |
+          <a href="#">ABOUT US</a>
+        </nav>
+      </header> 
+        <h2><u>Harry Potter</u></h2>
+      <p id="demo"></p>
+      <script>
+      var var1 = setInterval(inTimer, 500);
+      var fs = 5; 
+      var ids = document.getElementById("demo");
+      function inTimer()
+      {
+        ids.innerHTML = 'Harry Potter';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+        fs += 5;
+        if (fs >= 50)
+        {
+          clearInterval(var1);
+          var2 = setInterval(deTimer, 500);
+        }
+      }
+    function deTimer()
+      {
+        fs -= 5;
+        ids.innerHTML = 'Harry Potter';
+        ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+       if (fs == 5)
+        {
+          clearInterval(var2);
+          var1 = setInterval(inTimer, 500);
+        }
+      }
+</script>
+      <title>Harry Potter</title>
+      <img src="C:\Users\aavni\Pictures\harry-potter-streaming-guide.jpg" alt="Harry Potter" width="450" height="280">
+      <br>
+      <h2>by<a href="/html"> Ankitha</a></h2>
+      <article>Harry Potter is a film series based on the eponymous novels by J. K. Rowling. The series is distributed by Warner Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and culminating with Harry Potter and the Deathly Hallows – Part 2 (2011)</article>
+      <br>    
+      
+      <h3><u> Reviews</u></h3>      
+      <section>
+        <strong>Harry Potter is my fav!</strong>
+        <br>
+        <stong>Rakesh</strong><img src="C:\Users\aavni\Desktop\pic\i2.png" alt="rating";>      
+          <br>
+        
+        <hr>
+        <strong>Harry Potter and the cursedchild is awaited!!!!</strong> 
+        <br>
+        <stong>Prajwal</strong><img src="C:\Users\aavni\Desktop\pic\i1.png" alt="rating";>
+          <br>
+        
+        <hr>
+        <strong>Awesome Movie</strong>
+        <br>
+        <stong>Bhumika</strong><img src="C:\Users\aavni\Desktop\pic\i1.png" alt="rating";>
+          <br>
+          
+        <hr>
+      </section>
+       <footer><nav>
+          <a href="#">HOME</a> |
+          <a href="#">PLACES</a> |
+          <a href="#">GALLERY</a> |
+          <a href="#">ABOUT US</a>
+        </nav>
+<br>
+<strong><i>Copyright &copy;  by Ankitha</i></strong>
+</footer>
+</body>
+</html>
